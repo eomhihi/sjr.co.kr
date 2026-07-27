@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>세종리서치데이터연구소(주) | 데이터 인텔리전스 리서치 플랫폼</title>
+    <meta
+      name="description"
+      content="데이터 인텔리전스로 더 나은 미래를 설계합니다."
+    />
+    <meta name="theme-color" content="#0D2F3A" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+
+    <!-- 전문 글자체: Pretendard (전역 폰트) -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <meta property="og:title" content="세종리서치데이터연구소(주)" />
+    <meta
+      property="og:description"
+      content="데이터 인텔리전스로 교육과 정책의 미래를 설계하다"
+    />
+    <meta property="og:image" content="/logo.png" />
+  </head>
+  <body>
+    <!-- ===================================================================
+         HEADER / GNB
+    ==================================================================== -->
+    <header
+      data-header
+      class="sticky top-0 z-50 w-full border-b border-white/10 bg-ink transition-all duration-200"
+    >
+      <div class="container-c flex h-[68px] items-center justify-between gap-4">
+        <!-- 로고 (반응형: 모바일 h-7 / 데스크탑 h-10) -->
+        <a href="#" data-nav="home" class="flex items-center" aria-label="세종리서치데이터연구소 홈">
+          <img
+            src="/logo.png"
+            alt="세종리서치데이터연구소(주) 로고"
+            class="h-7 w-auto md:h-10"
+            width="240"
+            height="56"
+            decoding="async"
+          />
+        </a>
+
+        <!-- 데스크탑 내비게이션 -->
+        <nav class="hidden items-center gap-8 lg:flex" aria-label="주요 메뉴">
+          <a href="#" data-nav="about" class="nav-link">기업소개</a>
+          <a href="#" data-nav="competencies" class="nav-link">전문역량</a>
+          <a href="#" data-nav="record" class="nav-link">수행실적</a>
+        </nav>
+
+        <!-- 데스크탑 CTA -->
+        <div class="hidden lg:block">
+          <a href="mailto:khj@sjr.co.kr" class="btn-primary">사업 문의</a>
+        </div>
+
+        <!-- 모바일 햄버거 -->
+        <button
+          data-menu-button
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/20 bg-white/5 text-white lg:hidden"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+        >
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- 모바일 메뉴 패널 -->
+      <div data-mobile-menu class="hidden border-t border-white/10 bg-ink lg:hidden">
+        <nav class="container-c flex flex-col gap-1 py-3" aria-label="모바일 메뉴">
+          <a href="#" data-nav="about" class="rounded-lg px-2 py-3 text-base font-medium text-white hover:bg-white/5">기업소개</a>
+          <a href="#" data-nav="competencies" class="rounded-lg px-2 py-3 text-base font-medium text-white hover:bg-white/5">전문역량</a>
+          <a href="#" data-nav="record" class="rounded-lg px-2 py-3 text-base font-medium text-white hover:bg-white/5">수행실적</a>
+          <a href="mailto:khj@sjr.co.kr" class="btn-primary mt-2 w-full">사업 문의</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="min-h-[calc(100vh-68px)] bg-ink">
+      <!-- ===================================================================
+           VIEW: HOME (메인)
+      ==================================================================== -->
+      <div data-view-panel="home" class="view-panel">
+      <section class="hero-main relative flex min-h-[calc(100vh-68px)] items-center overflow-hidden text-white">
+        <!-- 배경 이미지 (우측) -->
+        <div class="hero-bg-photo" aria-hidden="true"></div>
+        <!-- dark-teal → 우측 투명 그라데이션 -->
+        <div class="hero-bg-fade" aria-hidden="true"></div>
+
+        <div class="container-c relative z-10 w-full py-16 lg:py-20">
+          <div class="max-w-xl text-left">
+            <div class="hero-eyebrow">
+              <span class="text-xs font-semibold tracking-[0.18em] text-accent">데이터 기반 정책 혁신</span>
+            </div>
+
+            <h1 class="mt-8 text-4xl font-bold leading-[1.2] tracking-tight sm:text-5xl lg:text-6xl">
+              데이터로<br />
+              교육과 정책의<br />
+              <span class="text-accent">미래를 설계하다</span>
+            </h1>
+
+            <p class="mt-7 text-base leading-relaxed text-white/70 sm:text-lg">
+              세종리서치데이터연구소는<br />
+              과학적 조사방법론과 AI 기술을 융합하여<br />
+              조사분석의 전 과정을 혁신하는<br />
+              전문 리서치 기업입니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      <!-- ===================================================================
+           VIEW: ABOUT
+      ==================================================================== -->
+      <div data-view-panel="about" class="view-panel hidden">
+      <section class="py-20 lg:py-28">
+        <div class="container-c">
+          <!-- 중앙 정렬 헤더 -->
+          <div class="mx-auto max-w-3xl text-center">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">기업 개요 &amp; 핵심 가치</p>
+            <h2 class="mt-4 text-3xl font-bold leading-tight text-white sm:text-4xl">
+              신뢰할 수 있는 데이터,<br class="hidden sm:block" />
+              과학적 방법론으로 증명합니다
+            </h2>
+            <div class="mx-auto mt-5 h-1 w-12 rounded-full bg-accent"></div>
+          </div>
+
+          <!-- 핵심 가치 카드 (동일 포맷 통일) -->
+          <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- 정확성 -->
+            <article class="card card-hover group">
+              <div class="icon-box group-hover:scale-110">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z"/><path d="M12 8v4l2.5 2.5"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-white">정확성</h3>
+              <p class="mt-2 text-sm leading-relaxed text-white/65">
+                체계적 표본 설계와 통계적 검증을 통한 신뢰성 확보
+              </p>
+            </article>
+
+            <!-- 전문성 -->
+            <article class="card card-hover group">
+              <div class="icon-box group-hover:scale-110">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-white">전문성</h3>
+              <p class="mt-2 text-sm leading-relaxed text-white/65">
+                조사·분석·리포트 전 과정의 전문 인력 및 직접 수행
+              </p>
+            </article>
+
+            <!-- 혁신성 -->
+            <article class="card card-hover group">
+              <div class="icon-box group-hover:scale-110">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"/><circle cx="12" cy="12" r="4"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-white">혁신성</h3>
+              <p class="mt-2 text-sm leading-relaxed text-white/65">
+                AI · 클라우드 · 빅데이터 기반 조사분석 자동화 실현
+              </p>
+            </article>
+
+            <!-- 보안체계 -->
+            <article class="card card-hover group">
+              <div class="icon-box group-hover:scale-110">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <h3 class="mt-5 text-lg font-bold text-white">보안체계</h3>
+              <p class="mt-2 text-sm leading-relaxed text-white/65">
+                AES-256 데이터 암호화 및 개인정보보호법 완전 준수
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      <!-- ===================================================================
+           VIEW: COMPETENCIES
+      ==================================================================== -->
+      <div data-view-panel="competencies" class="view-panel hidden">
+      <section class="py-20 lg:py-28">
+        <div class="container-c">
+          <div class="max-w-2xl">
+            <p class="eyebrow">전문 역량 &amp; 차별화 전략</p>
+            <h2 class="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl">
+              교육 전문성과 과학적 분석,<br class="hidden sm:block" />
+              그리고 AI 기술의 융합
+            </h2>
+          </div>
+
+          <div class="mt-12 grid gap-5 lg:grid-cols-3">
+            <!-- 카드 1: 교육 분야 -->
+            <article class="card card-hover group">
+              <div class="icon-box group-hover:scale-110">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 10v6"/></svg>
+              </div>
+              <h3 class="mt-5 text-xl font-bold text-white">교육 분야 전문성</h3>
+              <p class="mt-1 text-sm font-medium text-accent">특화 강점</p>
+              <ul class="mt-6 space-y-3 text-sm leading-relaxed text-white/75">
+                <li class="flex gap-2.5"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span>학습성과 및 교육프로그램 효과성·만족도 측정 평가</li>
+                <li class="flex gap-2.5"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span>교육정책 수립 지원, 정책효과 평가 및 교육수요 분석</li>
+                <li class="flex gap-2.5"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span>대학·학교·교육청 대상 조직진단 및 교육품질관리 컨설팅</li>
+              </ul>
+            </article>
+
+            <!-- 카드 2: 과학적 조사분석 -->
+            <article class="card card-hover group">
+              <div class="icon-box group-hover:scale-110">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16v-4"/><path d="M12 16V8"/><path d="M17 16v-6"/></svg>
+              </div>
+              <h3 class="mt-5 text-xl font-bold text-white">과학적 조사분석</h3>
+              <p class="mt-1 text-sm font-medium text-accent">통계 강점</p>
+              <ul class="mt-6 space-y-3 text-sm leading-relaxed text-white/75">
+                <li class="flex gap-2.5"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span>Python 기반 고급통계분석 (회귀·요인분석, 구조방정식 모델링 등)</li>
+                <li class="flex gap-2.5"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span>표본설계, 측정도구 개발, 타당도·신뢰도 검증 및 데이터 클렌징</li>
+                <li class="flex gap-2.5"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span>질적·양적 통합연구(Mixed Methods Research) 설계 및 수행</li>
+              </ul>
+            </article>
+
+            <!-- 카드 3: AI 기술 융합 -->
+            <article class="card card-hover group">
+              <div class="icon-box group-hover:scale-110">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+              </div>
+              <h3 class="mt-5 text-xl font-bold text-white">AI 기술 융합 &amp; 엔드투엔드</h3>
+              <p class="mt-1 text-sm font-medium text-accent">통합 솔루션</p>
+              <ul class="mt-6 space-y-3 text-sm leading-relaxed text-white/75">
+                <li class="flex gap-2.5"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span>자연어처리(NLP) 기반 텍스트마이닝, 감성분석 및 토픽 모델링</li>
+                <li class="flex gap-2.5"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span>조사 기획·표본 설계·데이터 수집·분석·리포팅 전 과정 직접 수행</li>
+                <li class="flex gap-2.5"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"></span>AWS · Naver · Kakao Cloud 기반 안정적 인프라 (99.9% 가용성)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      <!-- ===================================================================
+           VIEW: RECORD
+      ==================================================================== -->
+      <div data-view-panel="record" class="view-panel hidden">
+      <section class="py-20 lg:py-28">
+        <div class="container-c">
+          <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <div class="max-w-2xl">
+              <p class="eyebrow">주요 수행 실적</p>
+              <h2 class="mt-5 text-3xl font-bold leading-tight text-white sm:text-4xl">
+                데이터로 증명한<br class="hidden sm:block" />
+                연구 수행의 발자취
+              </h2>
+            </div>
+
+            <!-- 탭 버튼 -->
+            <div role="tablist" aria-label="수행 실적 분야" class="flex flex-wrap gap-2 rounded-full border border-white/10 bg-white/5 p-1.5">
+              <button class="tab-btn" role="tab" data-tab="edu" aria-selected="true">교육</button>
+              <button class="tab-btn" role="tab" data-tab="public" aria-selected="false">공공</button>
+              <button class="tab-btn" role="tab" data-tab="tech" aria-selected="false">기술개발</button>
+            </div>
+          </div>
+
+          <!-- 패널: 교육 -->
+          <div data-panel="edu" role="tabpanel" class="mt-10 grid gap-5 md:grid-cols-2">
+            <article class="card">
+              <h3 class="text-lg font-bold text-white">대학 교육품질 평가</h3>
+              <p class="mt-3 text-sm leading-relaxed text-white/65">
+                대학 교육만족도 조사를 수행하고, 데이터 기반의 교육과정 개선방안을
+                도출하여 교육품질 제고를 지원했습니다.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="text-lg font-bold text-white">교육정책 및 실태조사</h3>
+              <p class="mt-3 text-sm leading-relaxed text-white/65">
+                대학 정책의 인식조사와 평생교육 프로그램의 효과성 분석을 통해
+                정책 수립의 근거를 마련했습니다.
+              </p>
+            </article>
+          </div>
+
+          <!-- 패널: 공공 -->
+          <div data-panel="public" role="tabpanel" class="mt-10 hidden grid gap-5 md:grid-cols-2">
+            <article class="card">
+              <h3 class="text-lg font-bold text-white">지자체 정책 만족도 평가</h3>
+              <p class="mt-3 text-sm leading-relaxed text-white/65">
+                지자체(세종시) 주요 정책에 대한 만족도를 조사하여 정책 효과를
+                객관적으로 진단했습니다.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="text-lg font-bold text-white">지방행정 서비스 품질평가</h3>
+              <p class="mt-3 text-sm leading-relaxed text-white/65">
+                지방행정 서비스 품질평가를 통해 공공 서비스의 개선 우선순위와
+                전략 방향을 제시했습니다.
+              </p>
+            </article>
+          </div>
+
+          <!-- 패널: 기술개발 -->
+          <div data-panel="tech" role="tabpanel" class="mt-10 hidden grid gap-5 md:grid-cols-2">
+            <article class="card">
+              <h3 class="text-lg font-bold text-white">세종랩 플랫폼 구축</h3>
+              <p class="mt-3 text-sm leading-relaxed text-white/65">
+                시민 정책참여 패널 운영과 사회조사분석 체계를 위한 CX 지능형
+                플랫폼 '세종랩'을 자체 개발했습니다.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="text-lg font-bold text-white">AI 분석 엔진 &amp; 클라우드 인프라</h3>
+              <p class="mt-3 text-sm leading-relaxed text-white/65">
+                NLP 기반 텍스트 분석 엔진과 AWS·Naver·Kakao Cloud 기반의
+                확장 가능한 인프라(99.9% 가용성)를 운영합니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-white/10 py-16 lg:py-20">
+        <div class="container-c grid grid-cols-2 gap-y-10 text-center md:grid-cols-4">
+          <div class="space-y-2">
+            <p class="text-4xl font-bold text-white sm:text-5xl">20<span class="text-accent">+</span></p>
+            <p class="text-sm font-medium text-white/60">누적 수행 프로젝트</p>
+          </div>
+          <div class="space-y-2">
+            <p class="text-4xl font-bold text-white sm:text-5xl">2K<span class="text-accent">+</span></p>
+            <p class="text-sm font-medium text-white/60">조사 응답 표본</p>
+          </div>
+          <div class="space-y-2">
+            <p class="text-4xl font-bold text-white sm:text-5xl">98<span class="text-accent">%</span></p>
+            <p class="text-sm font-medium text-white/60">통계 신뢰수준</p>
+          </div>
+          <div class="space-y-2">
+            <p class="text-4xl font-bold text-white sm:text-5xl">99.9<span class="text-accent">%</span></p>
+            <p class="text-sm font-medium text-white/60">시스템 가용성</p>
+          </div>
+        </div>
+      </section>
+      </div>
+    </main>
+
+    <!-- ===================================================================
+         FOOTER
+    ==================================================================== -->
+    <footer class="border-t border-white/10 bg-ink text-white">
+      <div class="container-c py-16">
+        <div class="grid gap-10 lg:grid-cols-12">
+          <div class="lg:col-span-5">
+            <!-- 푸터 로고 (화이트 로고, 반응형) -->
+            <img
+              src="/logo.png"
+              alt="세종리서치데이터연구소(주) 로고"
+              class="h-8 w-auto md:h-10"
+              width="240"
+              height="56"
+              loading="lazy"
+              decoding="async"
+            />
+            <p class="mt-6 max-w-md text-sm leading-relaxed text-white/55">
+              데이터 인텔리전스로 더 나은 미래를 설계합니다.
+            </p>
+          </div>
+
+          <div class="lg:col-span-3 lg:col-start-8">
+            <h3 class="text-sm font-semibold text-accent">바로가기</h3>
+            <ul class="mt-4 space-y-3 text-sm text-white/55">
+              <li><a href="#" data-nav="about" class="transition-colors hover:text-white">기업소개</a></li>
+              <li><a href="#" data-nav="competencies" class="transition-colors hover:text-white">전문역량</a></li>
+              <li><a href="#" data-nav="record" class="transition-colors hover:text-white">수행실적</a></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h3 class="text-sm font-semibold text-accent">자사 서비스</h3>
+            <ul class="mt-4 space-y-3 text-sm text-white/55">
+              <li><a href="https://www.sejonglab.com" target="_blank" rel="noopener" class="transition-colors hover:text-white">세종랩</a></li>
+              <li><a href="https://pf.kakao.com/_EnqxjX" target="_blank" rel="noopener" class="transition-colors hover:text-white">카카오톡 채널</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-7 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
+          <p>© <span data-year>2026</span> SEJONG RESEARCH DATA INSTITUTE. All rights reserved.</p>
+          <p>세종특별자치시 어진동 520, 한뜰마을4단지 2층 245호 · 평일 10:00~17:00</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
