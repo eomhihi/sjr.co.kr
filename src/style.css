@@ -72,6 +72,10 @@
     @apply btn bg-white text-ink border border-transparent hover:bg-cream active:scale-[0.98];
   }
 
+  .btn-light-rect {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-bold text-ink transition-all duration-200 whitespace-nowrap hover:bg-cream active:scale-[0.98];
+  }
+
   .btn-outline-light {
     @apply btn border border-white/25 text-white hover:bg-white/10 active:scale-[0.98];
   }
